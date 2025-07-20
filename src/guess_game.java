@@ -14,7 +14,6 @@ class game{
         guess = sc.nextInt();
         if (guess<0){
             System.out.println("No ! negative integer is allowed in game");
-            return;
         }
     }
     public boolean check(){
