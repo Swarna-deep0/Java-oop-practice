@@ -5,6 +5,7 @@ class game{
     int num;
     int guess;
     game(){ //constructor
+        System.out.println("hello");
         Random rn = new Random();
         num = rn.nextInt(0, 100);
     }
