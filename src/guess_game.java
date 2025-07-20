@@ -10,7 +10,7 @@ class game{
     }
     public void guess(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("what is your guess : ");
+        System.out.print("what is your guess in game : ");
         guess = sc.nextInt();
         if (guess<0){
             System.out.println("No ! negative integer is allowed in game");
