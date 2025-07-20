@@ -19,7 +19,7 @@ class rockgame {
             if(sc.hasNextInt()){
                 guess=sc.nextInt();
                 if (guess>=0 && guess<=2){
-                    break;
+                    contune;
                 }
                 else {
                     System.out.println("invalid input");
