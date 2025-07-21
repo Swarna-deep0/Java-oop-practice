@@ -12,7 +12,6 @@ class game{
         Scanner sc = new Scanner(System.in);
         System.out.print("what is your guess : ");
         guess = sc.nextInt();
-        System.out.println("hola");
         if (guess<0){
             System.out.println("No ! negative integer is allowed in game");
         }
