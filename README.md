@@ -1,22 +1,50 @@
-# Java OOP Practice Projects
+<!-- README.md for Java OOP Practice Projects -->
 
-This repository contains a collection of simple Java programs developed while learning Object-Oriented Programming (OOP). Each project focuses on practicing concepts like classes, methods, inheritance, encapsulation,
-and modular code design.
+<h1 align="center">💻 Java OOP Practice Projects</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-OOP-blue?style=flat-square&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/github/repo-size/Swarna-deep0/Java-oop-practice?style=flat-square&color=success" />
+  <img src="https://img.shields.io/github/last-commit/Swarna-deep0/Java-oop-practice?style=flat-square&logo=github" />
+</p>
+
+<p align="center"><i>Practice projects to strengthen Object-Oriented Programming (OOP) fundamentals in Java.</i></p>
+
+---
+
+## 🔍 Overview
+
+This repository contains a collection of mini Java projects developed while learning and practicing core Object-Oriented Programming concepts. Each project showcases clean code, modular structure, and real-world logic implementation.
+
+---
 
 ## 📁 Projects Included
 
-- GuessGame.java` – A number guessing game.
-- OnlineLibrary.java` – A basic library management system (add/issue/return books).
-- RockPaperScissor.java` – A console-based Rock-Paper-Scissors game.
+<table>
+  <tr>
+    <th>📄 File</th>
+    <th>📌 Description</th>
+  </tr>
+  <tr>
+    <td><code>GuessGame.java</code></td>
+    <td>A number guessing game using basic input/output and loop logic.</td>
+  </tr>
+  <tr>
+    <td><code>OnlineLibrary.java</code></td>
+    <td>A simple library system to add, issue, return, and list books.</td>
+  </tr>
+  <tr>
+    <td><code>RockPaperScissor.java</code></td>
+    <td>Console-based Rock-Paper-Scissors game against the computer.</td>
+  </tr>
+</table>
 
-## 🧠 Purpose
-
-These projects were created as part of my practice to strengthen core Java skills through hands-on implementation. They serve as learning experiments and can be helpful for others starting out with OOP in Java.
+---
 
 ## 🚀 Getting Started
 
-To run the projects locally:
+To run these Java programs locally:
 
-1. Clone the repository: in bash / IDE terminal
-
-- git clone https://github.com/Swarna-deep0/Java-oop-practice.git
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Swarna-deep0/Java-oop-practice.git
