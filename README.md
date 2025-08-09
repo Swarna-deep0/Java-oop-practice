@@ -31,7 +31,7 @@ This repository contains a collection of mini Java projects developed while lear
   </tr>
   <tr>
     <td><code>OnlineLibrary.java</code></td>
-    <td>A simple library system to add, issue, return, and list books.</td>
+    <td>A simple com.library system to add, issue, return, and list books.</td>
   </tr>
   <tr>
     <td><code>RockPaperScissor.java</code></td>
