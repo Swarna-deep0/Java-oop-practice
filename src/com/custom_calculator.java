@@ -69,7 +69,7 @@ class calculator{
 }
 
 public class custom_calculator {
-    public static void main(String[] args) throws MaxMultiplier , MaxInput , Invalidinputexception , divideexception{
+    public static void main(String[] args){
         calculator cc = new calculator();
         
         try {
@@ -97,3 +97,13 @@ public class custom_calculator {
         }
     }
 }
+
+// Step-by-Step Flow:
+
+//1. cc.div() is called
+//2. Inside div(): b==0 is true
+//3. throw new divideexception("anything canot be divided by zero") executes
+//4. This divideexception object is caught by catch (Exception e)
+//5. 'e' now refers to that specific divideexception object .
+//6. e.getMessage() returns "anything canot be divided by zero"
+
