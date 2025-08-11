@@ -71,25 +71,25 @@ class calculator{
 public class custom_calculator {
     public static void main(String[] args){
         calculator cc = new calculator();
-        
+
         try {
             System.out.println("Addition: " + cc.add());
         } catch (Exception e) {
             System.out.println("Addition Error: " + e.getMessage());
         }
-        
+
         try {
             System.out.println("Subtraction: " + cc.sub());
         } catch (Exception e) {
             System.out.println("Subtraction Error: " + e.getMessage());
         }
-        
+
         try {
             System.out.println("Division: " + cc.div());
         } catch (Exception e) {
             System.out.println("Division Error: " + e.getMessage());
         }
-        
+
         try {
             System.out.println("Multiplication: " + cc.mul());
         } catch (Exception e) {
