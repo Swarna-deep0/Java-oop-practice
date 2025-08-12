@@ -24,8 +24,8 @@ class MaxMultiplier extends Exception{
 }
 
 class calculator{
-    double a ;
-    double b ;
+    final double a ;
+    final double b ;
     calculator(){
         Scanner sc = new Scanner(System.in);
         System.out.print("enter your first number : ");
