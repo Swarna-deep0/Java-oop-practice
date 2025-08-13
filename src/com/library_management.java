@@ -3,7 +3,7 @@ package com;
 import java.util.ArrayList;
 import java.util.Date;
 
-/* Create a library management system which is capable of issuing books to the students.
+/* Created a library management system which is capable of issuing books to the students.
 Book should have info like:
 Book name
 Book Author
