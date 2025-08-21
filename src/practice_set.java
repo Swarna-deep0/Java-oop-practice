@@ -4,10 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.Scanner;
 
 class task extends Thread{
-    private StringBuilder sb;
-    public task(StringBuilder sb) {
+    private StringBuffer sb;
+    public task(StringBuffer sb) {
         this.sb = sb;
     }
     public void run(){
@@ -39,7 +40,7 @@ public class practice_set {
 
         //stringbuilder :
 
-        StringBuilder sb = new StringBuilder();
+        StringBuffer sb = new StringBuffer();
         task t1 = new task(sb);
         task t2 = new task(sb);
 
@@ -50,5 +51,13 @@ public class practice_set {
         t2.join();
 
         System.out.println("Final length : " + sb.length());
+
+        //
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        sc.close();
+        StringBuffer sd = new StringBuffer(A);
+//        String app = sd.append("hello").toString();
+        System.out.println(sd.append("hello"));
     }
 }
