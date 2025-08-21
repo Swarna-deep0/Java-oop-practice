@@ -21,5 +21,8 @@ public class practice_set {
 
         // String
 
+        String str1 = "Hello";
+        String st2 = str1.concat("lava");
+        System.out.println(st2);
     }
 }
