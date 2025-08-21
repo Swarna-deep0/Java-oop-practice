@@ -5,8 +5,20 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+class task extends Thread{
+    private StringBuilder sb;
+    public task(StringBuilder sb) {
+        this.sb = sb;
+    }
+    public void run(){
+        for (int i = 0;i<1000;i++){
+            sb.append("a");
+        }
+    }
+}
+
 public class practice_set {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //to find second largest value from array
         List<Integer> l1 = Arrays.asList(23, 90, 45, 45, 78, 12);
@@ -24,5 +36,19 @@ public class practice_set {
         String str1 = "Hello";
         String st2 = str1.concat("lava");
         System.out.println(st2);
+
+        //stringbuilder :
+
+        StringBuilder sb = new StringBuilder();
+        task t1 = new task(sb);
+        task t2 = new task(sb);
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println("Final length : " + sb.length());
     }
 }
