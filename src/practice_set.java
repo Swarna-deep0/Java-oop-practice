@@ -69,5 +69,12 @@ public class practice_set {
             if (i != 0) s2.append(" ");
         }
         System.out.println(s2.toString());
+
+        //reversing with stream api
+
+        String result = Arrays.stream(s1.split(" "))
+                .reduce("",(a,b)->b + " " + a)
+                .trim(); // remove extra space at the end
+        System.out.println(result);
     }
 }
