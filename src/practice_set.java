@@ -60,11 +60,12 @@ public class practice_set {
 //        System.out.println(sd.append("hello"));
 
         //reversing a sentence not words :
+
         String s1 = sc.nextLine();
         StringBuffer s2 = new StringBuffer();
 
         String[] arr = s1.split(" ");
-        for (int i = arr.length - 1; i>= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             s2.append(arr[i]);
             if (i != 0) s2.append(" ");
         }
@@ -73,8 +74,23 @@ public class practice_set {
         //reversing with stream api
 
         String result = Arrays.stream(s1.split(" "))
-                .reduce("",(a,b)->b + " " + a)
+                .reduce("", (a, b) -> b + " " + a)
                 .trim(); // remove extra space at the end
         System.out.println(result);
+
+        //getting orginal word :
+
+        System.out.print("Enter your object : ");
+        String m1 = sc.nextLine();
+        StringBuffer n1 = new StringBuffer();
+        char[]ch = m1.toCharArray();
+
+        for (int i =0;i<=ch.length-1;i++){
+            if (Character.isLetter(ch[i]) || ch[i]== ' '){
+                n1.append(ch[i]);
+            }
+        }
+        System.out.println(n1.toString());
+
     }
 }
