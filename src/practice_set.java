@@ -92,5 +92,12 @@ public class practice_set {
         }
         System.out.println(n1.toString());
 
+        //no duplicates words in line :
+        System.out.print("enter your line : ");
+        String ori = sc.nextLine();
+        String Result = Arrays.stream(ori.split(" "))
+                .distinct()
+                .collect(Collectors.joining(" "));
+        System.out.println(Result);
     }
 }
