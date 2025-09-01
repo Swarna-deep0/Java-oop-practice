@@ -99,5 +99,22 @@ public class practice_set {
                 .distinct()
                 .collect(Collectors.joining(" "));
         System.out.println(Result);
+
+        // continious input with stream api :
+        long in = Stream.iterate(0, n -> n+1)
+                .limit(101)
+                .skip(1)
+                .map(x->x/10).distinct()
+                .count();
+        System.out.println(in);
+
+        // swaing two varriable without third variable :
+
+        int a=10;
+        int b=20;
+        a= a + b; //30
+        b = a-b; //10
+        a = a-b;  //20
+
     }
 }
