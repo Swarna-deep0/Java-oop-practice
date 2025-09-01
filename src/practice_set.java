@@ -116,5 +116,7 @@ public class practice_set {
         b = a-b; //10
         a = a-b;  //20
 
+        System.out.println(a,b);
+
     }
 }
