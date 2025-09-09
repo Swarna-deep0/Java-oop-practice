@@ -38,7 +38,7 @@ public class practice_set {
         String st2 = str1.concat("lava");
         System.out.println(st2);
 
-        //stringbuilder :
+////        //stringbuilder :
 
         StringBuffer sb = new StringBuffer();
         task t1 = new task(sb);
@@ -52,12 +52,12 @@ public class practice_set {
 
         System.out.println("Final length : " + sb.length());
 
-        //
+
         Scanner sc = new Scanner(System.in);
-//        String A=sc.next();
-//        StringBuffer sd = new StringBuffer(A);
-////        String app = sd.append("hello").toString();
-//        System.out.println(sd.append("hello"));
+        String A=sc.next();
+        StringBuffer sd = new StringBuffer(A);
+        String app = sd.append("hello").toString();
+        System.out.println(sd.append("hello"));
 
         //reversing a sentence not words :
 
@@ -78,7 +78,7 @@ public class practice_set {
                 .trim(); // remove extra space at the end
         System.out.println(result);
 
-        //getting orginal word :
+  //getting orginal word :
 
         System.out.print("Enter your object : ");
         String m1 = sc.nextLine();
@@ -90,8 +90,12 @@ public class practice_set {
                 n1.append(ch[i]);
             }
         }
-        System.out.println(n1.toString());
-
+        System.eam.iterate(0, n -> n+1)
+              .limit(101)
+          .skip(1)
+                .map(x->x/10).distinct()
+              .count();
+System.out.println(in);out.println(n1.toString());
         //no duplicates words in line :
         System.out.print("enter your line : ");
         String ori = sc.nextLine();
@@ -99,15 +103,8 @@ public class practice_set {
                 .distinct()
                 .collect(Collectors.joining(" "));
         System.out.println(Result);
-
-        // continious input with stream api :
-        long in = Stream.iterate(0, n -> n+1)
-                .limit(101)
-                .skip(1)
-                .map(x->x/10).distinct()
-                .count();
-        System.out.println(in);
-
+////        // continious input with stream api :
+//        long in = Str
         // swaing two varriable without third variable :
 
         int a=10;
@@ -118,5 +115,18 @@ public class practice_set {
 
         System.out.println("a = " + a+ " b =" + b);
 
+        //No. having two interative zero are cancel
+
+        Scanner sd = new Scanner(System.in);
+        System.out.println("Enter you no. ");
+        String s = sd.nextLine();
+        char[] arr1 = s.toCharArray();
+        StringBuffer bu = new StringBuffer();
+        for (int i = 0; i < arr1.length; i++) {
+            if (i == arr1.length - 1 || !(arr1[i] == '0' && arr1[i+1] == '0')) {
+                bu.append(arr1[i]);
+            }
+        }
+        System.out.println(bu);
     }
 }
