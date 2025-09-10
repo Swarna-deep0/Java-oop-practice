@@ -90,12 +90,15 @@ public class practice_set {
                 n1.append(ch[i]);
             }
         }
-        System.eam.iterate(0, n -> n+1)
+        System.out.println(n1.toString());
+
+        // Stream iteration
+        Long in = Stream.iterate(0, n -> n+1)
               .limit(101)
           .skip(1)
                 .map(x->x/10).distinct()
               .count();
-System.out.println(in);out.println(n1.toString());
+System.out.println(in);
         //no duplicates words in line :
         System.out.print("enter your line : ");
         String ori = sc.nextLine();
@@ -117,9 +120,9 @@ System.out.println(in);out.println(n1.toString());
 
         //No. having two interative zero are cancel
 
-        Scanner sd = new Scanner(System.in);
+        Scanner d = new Scanner(System.in);
         System.out.println("Enter you no. ");
-        String s = sd.nextLine();
+        String s = d.nextLine();
         char[] arr1 = s.toCharArray();
         StringBuffer bu = new StringBuffer();
         for (int i = 0; i < arr1.length; i++) {
