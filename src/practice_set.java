@@ -38,7 +38,7 @@ public class practice_set {
         String st2 = str1.concat("lava");
         System.out.println(st2);
 
-////        //stringbuilder :
+        //stringbuilder :
 
         StringBuffer sb = new StringBuffer();
         task t1 = new task(sb);
@@ -56,7 +56,6 @@ public class practice_set {
         Scanner sc = new Scanner(System.in);
         String A=sc.next();
         StringBuffer sd = new StringBuffer(A);
-        String app = sd.append("hello").toString();
         System.out.println(sd.append("hello"));
 
         //reversing a sentence not words :
@@ -98,7 +97,8 @@ public class practice_set {
           .skip(1)
                 .map(x->x/10).distinct()
               .count();
-System.out.println(in);
+        System.out.println(in);
+
         //no duplicates words in line :
         System.out.print("enter your line : ");
         String ori = sc.nextLine();
@@ -106,8 +106,7 @@ System.out.println(in);
                 .distinct()
                 .collect(Collectors.joining(" "));
         System.out.println(Result);
-////        // continious input with stream api :
-//        long in = Str
+
         // swaing two varriable without third variable :
 
         int a=10;
@@ -121,15 +120,39 @@ System.out.println(in);
         //No. having two interative zero are cancel
 
         Scanner d = new Scanner(System.in);
-        System.out.println("Enter you no. ");
-        String s = d.nextLine();
-        char[] arr1 = s.toCharArray();
-        StringBuffer bu = new StringBuffer();
-        for (int i = 0; i < arr1.length; i++) {
-            if (i == arr1.length - 1 || !(arr1[i] == '0' && arr1[i+1] == '0')) {
-                bu.append(arr1[i]);
+        try {
+            System.out.println("Enter you no. ");
+            String s = d.nextLine();
+            char[] arr1 = s.toCharArray();
+            StringBuffer bu = new StringBuffer();
+            for (int i = 0; i < arr1.length; i++) {
+                if (i == arr1.length - 1 || !(arr1[i] == '0' && arr1[i + 1] == '0')) {
+                    bu.append(arr1[i]);
+                }
             }
+            System.out.println(bu);
+        } catch (RuntimeException e) {
+            throw new RuntimeException(e);
         }
-        System.out.println(bu);
+
+        // taking 10 input in an array and find the highest integer with its index
+
+        Scanner xx = new Scanner(System.in);
+        int[] all = new int[10];
+            System.out.println("enter your digit's : ");
+            for(int i = 0;i<10;i++){
+                all[i]=xx.nextInt();
+            }
+        int max= all[0];
+        int max_index=0;
+            for (int i=1;i<all.length;i++){
+                if(all[i]> max){
+                    max =  all[i];
+                    max_index = i;
+                }
+            }
+        System.out.println("max value : " + max);
+        System.out.println("max_index : " + max_index);
     }
 }
+
