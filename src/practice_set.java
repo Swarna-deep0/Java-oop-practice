@@ -139,10 +139,12 @@ public class practice_set {
 
         Scanner xx = new Scanner(System.in);
         int[] all = new int[10];
-            System.out.println("enter your digit's : ");
-            for(int i = 0;i<10;i++){
-                all[i]=xx.nextInt();
-            }
+        System.out.println("enter your digit's (comma separated): ");
+        String input = xx.nextLine();
+        String[] numbers = input.split(",");
+        for(int i = 0; i < Math.min(numbers.length, 10); i++){
+            all[i] = Integer.parseInt(numbers[i].trim());
+        }
         int max= all[0];
         int max_index=0;
             for (int i=1;i<all.length;i++){
