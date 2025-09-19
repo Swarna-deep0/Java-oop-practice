@@ -25,7 +25,7 @@ public class SIP_calculator {
                 int t = sc.nextInt();
                 double Total = calculate(pa,ir,t);
                 System.out.println("Total amount is : " + Total);
-                valid = false;
+                break;
             } catch (InputMismatchException e) {
                 System.out.println("Not allowed - Please enter valid numbers");
                 sc.next(); // Clear the invalid input from buffer
