@@ -1,8 +1,16 @@
 package com;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SIP_calculator {
+    public static double calculate(int pa,int ir ,int t){
+        double T = pa;
+        for (int i = 0; i < t; i++) {
+            T = T + (T * ir/100);
+        }
+        return T;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean valid = true;
@@ -15,15 +23,12 @@ public class SIP_calculator {
                 int ir = sc.nextInt();
                 System.out.print("Enter your Tenure : ");
                 int t = sc.nextInt();
-                valid = false;
-                double Total = pa;
-                for (int i = 0; i < t; i++) {
-                    Total = Total + (Total * ir) / 100;
-                }
+                double Total = calculate(pa,ir,t);
                 System.out.println("Total amount is : " + Total);
-            } catch (Exception e) {
+                valid = false;
+            } catch (InputMismatchException e) {
                 System.out.println("Not allowed - Please enter valid numbers");
-                sc.nextInt(); // Clear the invalid input from buffer
+                sc.next(); // Clear the invalid input from buffer
             }
         }
     }
