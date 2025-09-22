@@ -155,6 +155,18 @@ public class practice_set {
             }
         System.out.println("max value : " + max);
         System.out.println("max_index : " + max_index);
+
+        // Strings with vowels :
+
+        System.out.println("Enter your Word : ");
+        String Ss = sc.nextLine();
+        char[]original = Ss.toCharArray();
+        StringBuffer ne = new StringBuffer();
+        for (int i = 0;i<original.length;i++){
+            if(original[i]=='a' || original[i] == 'e' || original[i] == 'i' || original[i] == 'o' || original[i] == 'u')continue;
+            else ne.append(original[i]);
+        }
+        System.out.println(ne);
     }
 }
 
