@@ -1,6 +1,7 @@
 package PACKAGE_NAME;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -167,6 +168,24 @@ public class practice_set {
             else ne.append(original[i]);
         }
         System.out.println(ne);
+
+        // sum of distinct number in array in traditional manner :
+
+        int[]L1 = {20,40,20,60,5,6,5};
+        HashMap<Integer,Integer> st = new HashMap<>();
+        int sum = 0 ;
+        for (int i = 0;i<L1.length;i++){
+            if (st.containsKey(L1[i])){
+                st.put(L1[i],st.get(L1[i])+1);
+            }
+            else st.put(L1[i],1);
+        }
+        for (int key : st.keySet()){
+            if (st.get(key)==1){
+                sum = sum + key ;
+            }
+        }
+        System.out.println("The sum of Distinct number is : " + sum);
     }
 }
 
