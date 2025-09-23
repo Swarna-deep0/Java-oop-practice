@@ -1,5 +1,6 @@
 package PACKAGE_NAME;
 
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -186,6 +187,24 @@ public class practice_set {
             }
         }
         System.out.println("The sum of Distinct number is : " + sum);
+
+        // print only distinct number in an array  :
+
+        int[]D1 = {20,40,20,60,5,61,52,61};
+        HashMap<Integer,Integer> tt = new HashMap<>();
+        int sum1 = 0 ;
+        for (int i = 0;i<D1.length;i++){
+            if (st.containsKey(D1[i])){
+                st.put(D1[i],st.get(D1[i])+1);
+            }
+            else tt.put(L1[i],1);
+        }
+        for (int key1 : tt.keySet()){
+            if (tt.get(key1)==1){
+                System.out.println(key1 + ',');
+            }
+        }
+
     }
 }
 
