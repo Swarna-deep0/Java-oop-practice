@@ -22,7 +22,6 @@ class task extends Thread{
 
 public class practice_set {
     public static void main(String[] args) throws InterruptedException {
-
         //to find second largest value from array
         List<Integer> l1 = Arrays.asList(23, 90, 45, 45, 78, 12);
         Integer num = l1.stream()
@@ -56,9 +55,10 @@ public class practice_set {
 
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("enter your word to add : ");
         String A=sc.next();
-        StringBuffer sd = new StringBuffer(A);
-        System.out.println(sd.append("hello"));
+        StringBuffer sd = new StringBuffer("Hello ");
+        System.out.println(sd.append(A));
 
         //reversing a sentence not words :
 
@@ -192,19 +192,19 @@ public class practice_set {
 
         int[]D1 = {20,40,20,60,5,61,52,61};
         HashMap<Integer,Integer> tt = new HashMap<>();
-        int sum1 = 0 ;
         for (int i = 0;i<D1.length;i++){
-            if (st.containsKey(D1[i])){
-                st.put(D1[i],st.get(D1[i])+1);
+            if (tt.containsKey(D1[i])){
+                tt.put(D1[i],tt.get(D1[i])+1);
             }
-            else tt.put(L1[i],1);
+            else tt.put(D1[i],1);
         }
         for (int key1 : tt.keySet()){
             if (tt.get(key1)==1){
-                System.out.println(key1 + ',');
+                System.out.print(key1 + " ");
             }
+            System.out.println();
         }
-
+        System.out.println("frequency count : " + tt);
     }
 }
 
